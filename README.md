@@ -1,6 +1,6 @@
-# First Pull Request
+# Second Pull Request
 
-What was the first pull request you sent on GitHub? http://firstpr.me/
+What was the second pull request you sent on GitHub? http://dannytran.ca/second-pr/
 
 Hosted on https://pages.github.com
 
