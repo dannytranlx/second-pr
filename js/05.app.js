@@ -18,10 +18,10 @@ function render(template, params) {
 function loadData(login, cb){
   if(login){
     ga('send', 'event', 'login', 'search', login);
-    var searchURL = 'https://api.github.com/search/issues?q=type:pr+author:"'+login+'"&sort=created&order=asc&per_page=1'
+    var searchURL = 'https://api.github.com/search/issues?q=type:pr+author:"'+login+'"&sort=created&order=asc&per_page=2'
     $.getJSON(searchURL, function(data){
       if(data.items.length > 0){
-        $.getJSON(data.items[0].pull_request.url, function(data){
+        $.getJSON(data.items[1].pull_request.url, function(data){
           cb(data)
         })
       } else {
